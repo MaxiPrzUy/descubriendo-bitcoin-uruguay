@@ -1,33 +1,52 @@
-# Workshop Structure
+# Estructura del encuentro
 
-Each Descubriendo Bitcoin Uruguay workshop is designed to last between 90 and 120 minutes.
+Los encuentros de Descubriendo Bitcoin Uruguay están diseñados para durar aproximadamente **90 a 120 minutos**.
 
-The format can be adapted depending on the audience, venue, institution, and invited speaker.
+El formato puede adaptarse a la audiencia, el espacio y el contexto local sin perder los principios educativos del programa.
 
-## Suggested structure
+## Estructura sugerida
 
-1. Welcome and introduction.
-2. Pre-event printed survey.
-3. Introduction to Bitcoin.
-4. Educational block: what Bitcoin is, why it was created, and what problem it solves.
-5. Debate and open questions.
-6. Invited speaker or real-world use case.
-7. Final questions.
-8. Post-event digital survey via QR.
-9. Invitation to join the community.
-10. Photo and video documentation.
+1. Bienvenida y encuadre.
+2. Medición inicial.
+3. **Descubrir** — contexto, fundamentos y preguntas iniciales.
+4. **Debatir** — dudas, críticas, mitos y conversación.
+5. **Demostrar** — caso real, herramienta, simulación o experiencia local.
+6. Preguntas abiertas.
+7. Medición final.
+8. **Dar el siguiente paso** — opciones para continuar, sin presión.
+9. Documentación del encuentro, respetando consentimiento y privacidad.
 
-## Educational goals
+## Objetivos educativos
 
-By the end of the workshop, participants should be able to:
+Al finalizar, una persona debería poder:
 
-- Understand why Bitcoin was created.
-- Explain Bitcoin in simple terms.
-- Identify the difference between Bitcoin education and financial speculation.
-- Understand the basics of self-custody.
-- Recognize Bitcoin as an open monetary network.
-- Know how to continue learning safely and responsibly.
+- explicar Bitcoin en términos simples;
+- distinguir educación de especulación financiera;
+- entender que mineros y nodos cumplen funciones diferentes;
+- reconocer los principios básicos de autocustodia;
+- identificar riesgos comunes de seguridad;
+- comprender que Bitcoin es seudónimo, no completamente anónimo;
+- reconocer que los casos de uso dependen del contexto;
+- saber dónde continuar aprendiendo si así lo desea.
 
-## Important note
+## D4
 
-The workshop must not provide investment advice, trading guidance, or promises of financial return.
+La estructura del encuentro sigue el **Método D4**:
+
+**Descubrir → Debatir → Demostrar → Dar el siguiente paso**
+
+“Dar el siguiente paso” no significa comprar bitcoin, abrir una wallet ni sumarse obligatoriamente a una comunidad.
+
+Una opción válida es seguir leyendo, analizar críticas o no hacer nada por ahora.
+
+## Nota importante
+
+El encuentro no debe proporcionar:
+
+- asesoramiento financiero;
+- recomendaciones de compra;
+- orientación de trading;
+- predicciones de precio;
+- promesas de rentabilidad.
+
+La educación y la adopción se evalúan como cosas distintas.
