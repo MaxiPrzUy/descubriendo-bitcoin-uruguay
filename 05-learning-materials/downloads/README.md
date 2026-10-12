@@ -10,6 +10,8 @@ Publicación educativa abierta que reúne el recorrido de la clase introductoria
 
 La guía fue diseñada para poder leerse durante o después de un encuentro y para volver a consultar conceptos por separado.
 
+Como el programa sigue evolucionando, mantenemos también [**Notas y aclaraciones de la Edición 01**](NOTAS-Y-ACLARACIONES-EDICION-01.md), donde documentamos cambios de terminología y precisiones metodológicas sin borrar el historial.
+
 ## Presentación introductoria
 
 La presentación utilizada en los encuentros existe en el archivo de trabajo del proyecto.
