@@ -1,4 +1,7 @@
-# Encuesta de salida
+# Encuesta de salida — instrumento V1 / piloto 2026
+
+> **Estado:** instrumento histórico utilizado en el piloto inicial.  
+> Se conserva para trazabilidad. Para futuras versiones, ver [Protocolo de medición V2](measurement-protocol-v2.md).
 
 **ANÓNIMA · aproximadamente 3 minutos**
 
@@ -67,7 +70,7 @@ Escala **0 a 10**
 
 ## Cómo usar los resultados
 
-Compará la encuesta de entrada y salida por código anónimo.
+Para analizar el piloto 2026, compará la encuesta de entrada y salida por código anónimo.
 
 Podés observar:
 
