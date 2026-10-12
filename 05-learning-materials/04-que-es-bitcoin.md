@@ -25,9 +25,13 @@ Cualquier persona puede estudiar las reglas y, si quiere, correr software para v
 
 ### Escasez digital
 
-Las reglas del protocolo establecen un máximo de 21 millones de bitcoins.
+Bajo las reglas de consenso que usa hoy la red, la emisión total converge hacia un máximo de **21 millones de bitcoins**, aproximadamente hacia el año 2140.
 
-Ese límite no es una garantía de precio.
+Los nodos verifican que los bloques respeten esas reglas. No existe una autoridad central que pueda aumentar unilateralmente la emisión.
+
+Como cualquier regla de software, podría intentarse cambiar, pero para que ese cambio forme parte de Bitcoin tendría que ser adoptado por suficientes participantes de la red. Por eso conviene hablar de una regla de consenso verificable, no de una ley física inmutable.
+
+Ese límite **no es una garantía de precio ni de rentabilidad**.
 
 ### Red distribuida
 
