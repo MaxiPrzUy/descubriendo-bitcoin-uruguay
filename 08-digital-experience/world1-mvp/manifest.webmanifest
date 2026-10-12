@@ -1,0 +1,10 @@
+{
+  "name":"Descubriendo Bitcoin — Mundo 1",
+  "short_name":"DBU",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#11100e",
+  "theme_color":"#11100e",
+  "description":"Aprendé Bitcoin desde cero, descubriendo los problemas antes que las definiciones.",
+  "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
