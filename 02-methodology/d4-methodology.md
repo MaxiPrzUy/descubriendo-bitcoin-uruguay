@@ -1,8 +1,11 @@
 # Método D4
 
-El **Método D4** es la estructura educativa de Descubriendo Bitcoin.
+El **Método D4** es la estructura educativa oficial de Descubriendo Bitcoin.
 
-Su objetivo es convertir una charla introductoria en una experiencia que lleve a la persona desde la curiosidad hasta un siguiente paso concreto.
+> **Nombre canónico:** Método D4.  
+> En materiales anteriores puede aparecer como “4D”; a partir de esta versión se estandariza **D4** para toda la documentación nueva.
+
+Su objetivo es convertir una charla introductoria en una experiencia que lleve a la persona desde la curiosidad hasta un siguiente paso consciente.
 
 **Descubrir → Debatir → Demostrar → Dar el siguiente paso**
 
@@ -70,9 +73,9 @@ En el lanzamiento de Punta del Este, **Punta Bitcoin** funcionó como caso local
 
 ### Cuidado
 
-Demostrar no significa empujar a una persona a mover dinero real.
+Demostrar no significa empujar a una persona a mover dinero real, comprar bitcoin o adoptar una herramienta.
 
-Primero comprensión. Después experimentación responsable.
+Primero comprensión. Después, si la persona quiere, experimentación responsable.
 
 ---
 
@@ -80,19 +83,22 @@ Primero comprensión. Después experimentación responsable.
 
 Evitar que la experiencia termine cuando termina la charla.
 
-El cierre puede ofrecer:
+El siguiente paso **no equivale a adopción** y no tiene que ser el mismo para todos.
 
-- materiales educativos;
-- comunidad;
-- próximos encuentros;
-- recursos para seguir aprendiendo;
-- guía de seguridad;
-- repositorio abierto;
-- espacios donde hacer preguntas.
+Puede ser:
+
+- leer más;
+- revisar una crítica;
+- estudiar seguridad;
+- practicar con una simulación;
+- asistir a otro encuentro;
+- consultar materiales abiertos;
+- sumarse a una comunidad;
+- o simplemente no hacer nada por ahora.
 
 ### Resultado esperado
 
-La persona sabe **qué puede hacer después** sin presión comercial.
+La persona sabe **qué opciones tiene después** y por qué podrían ser útiles, sin presión comercial ni de adopción.
 
 ---
 
@@ -112,7 +118,7 @@ Puede adaptarse a:
 
 Lo importante es mantener la secuencia:
 
-**entender → preguntar → observar → continuar**
+**entender → preguntar → observar → decidir cómo continuar**
 
 ## Qué no debe perderse
 
@@ -122,7 +128,8 @@ Lo importante es mantener la secuencia:
 - presentación de riesgos;
 - independencia educativa;
 - ausencia de promesas de rentabilidad;
-- continuidad posterior.
+- ausencia de presión para comprar o usar Bitcoin;
+- continuidad opcional.
 
 ## Cómo saber si funcionó
 
@@ -130,10 +137,13 @@ D4 se complementa con medición antes y después de cada encuentro.
 
 No alcanza con que “la charla haya salido bien”.
 
-Queremos poder observar si:
+Queremos observar, de manera separada:
 
-- aumentó la comprensión;
-- quedaron conceptos claros;
-- surgieron nuevas preguntas;
-- la experiencia fue útil;
-- existe interés por continuar aprendiendo.
+- aprendizaje;
+- corrección de concepciones erróneas;
+- comprensión de riesgos;
+- preguntas que siguen abiertas;
+- utilidad percibida;
+- interés voluntario por continuar.
+
+La participación en una comunidad, un clic o una compra **no son métricas de aprendizaje**.
