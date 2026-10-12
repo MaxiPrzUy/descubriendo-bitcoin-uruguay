@@ -15,6 +15,7 @@ Si llegaste por primera vez, seguí este recorrido:
 3. [Organizá una edición](04-replication-toolkit/how-to-replicate.md)
 4. [Usá las encuestas](03-surveys-and-measurement/pre-event-survey.md)
 5. [Mirá el primer caso documentado](06-events/2026-09-23-punta-del-este/README.md)
+6. [Entendé cómo medimos impacto](07-impact/README.md)
 
 ## Qué es
 
@@ -71,6 +72,7 @@ La licencia del repositorio es **CC BY 4.0**. Podés compartir y adaptar los mat
 - **04-replication-toolkit** — guía práctica para organizar una edición.
 - **05-learning-materials** — materiales educativos reutilizables.
 - **06-events** — casos documentados y aprendizajes de campo.
+- **07-impact** — marco de medición y plantillas de reporte.
 
 ## Principios
 
