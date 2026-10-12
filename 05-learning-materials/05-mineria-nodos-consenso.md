@@ -44,9 +44,18 @@ Significa que la red converge hacia un historial válido porque sus participante
 
 ## Cómo viaja una transacción
 
-Una explicación introductoria puede seguir este recorrido:
+Una explicación introductoria más precisa puede seguir este recorrido:
 
-**wallet → transacción firmada → red → mineros → bloque → nodos → confirmaciones**
+1. **La wallet construye y firma** la transacción sin revelar la clave privada.
+2. **La transacción se difunde** a la red.
+3. **Los nodos la validan** según las reglas que conocen y, si es válida, pueden retransmitirla y mantenerla en su mempool local.
+4. **Los mineros seleccionan** transacciones válidas y construyen un bloque candidato.
+5. Compiten mediante **prueba de trabajo** para encontrar un bloque válido.
+6. El bloque ganador **se difunde** a la red.
+7. **Los nodos verifican el bloque completo**. Si viola las reglas, lo rechazan.
+8. Cuando el bloque es aceptado, la transacción obtiene su primera **confirmación**; los bloques posteriores agregan más confirmaciones.
+
+No existe un único “mempool global”: cada nodo mantiene su propia visión de transacciones pendientes.
 
 ## Qué es la blockchain
 
