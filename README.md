@@ -16,6 +16,7 @@ Si llegaste por primera vez, seguí este recorrido:
 4. [Usá las encuestas](03-surveys-and-measurement/pre-event-survey.md)
 5. [Mirá el primer caso documentado](06-events/2026-09-23-punta-del-este/README.md)
 6. [Entendé cómo medimos impacto](07-impact/README.md)
+7. [Descargá la guía de participantes](05-learning-materials/downloads/descubriendo-bitcoin-edicion-01.pdf)
 
 ## Qué es
 
