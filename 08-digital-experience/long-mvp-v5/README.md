@@ -1,4 +1,4 @@
-# Descubriendo Bitcoin — Long MVP V5
+# Descubriendo Bitcoin — Long MVP V5.1
 
 La V5 toma el Long MVP V4 y aplica el feedback real de las primeras experiencias de Descubriendo Bitcoin.
 
@@ -134,3 +134,12 @@ V5 migra automáticamente el progreso existente de V4 cuando lo encuentra.
 **Beta V5 para prueba humana en móvil y escritorio.**
 
 El siguiente QA importante no es agregar más contenido: es observar usuarios reales y medir dónde dudan, dónde abandonan y qué recuerdan después.
+
+
+## Pulido V5.1
+
+- se corrigió el número de versión interno;
+- las fases de reflexión ya no repiten siempre la misma etiqueta;
+- se limpiaron distractores que todavía sonaban demasiado obvios o caricaturescos;
+- el cierre ahora ofrece tres caminos: entender más, experimentar y conversar;
+- el criterio de éxito del cierre pasa de “terminé” a “tengo mejores preguntas”.
