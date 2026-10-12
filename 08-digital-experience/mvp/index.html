@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tu Ruta Bitcoin — MVP</title>
+<style>
+:root{--bg:#080808;--card:#111;--card2:#171717;--line:#292929;--txt:#f4f4f2;--muted:#aaa;--btc:#f7931a;--ok:#a9edbd;--warn:#ffd38a;--r:20px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#251608 0,transparent 35%),var(--bg);color:var(--txt);font:16px/1.45 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+#app{width:min(720px,100%);margin:auto;min-height:100vh;padding:18px 16px 42px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.brand{font-weight:800;letter-spacing:.07em;font-size:12px}.badge{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 9px}
+.card{background:rgba(17,17,17,.95);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 18px 50px #0008}
+h1{font-size:clamp(34px,8vw,62px);line-height:.98;margin:8px 0 18px;letter-spacing:-.04em}h2{font-size:28px;line-height:1.05;margin:6px 0 14px}h3{font-size:18px;margin:0 0 8px}.orange{color:var(--btc)}p{margin:0 0 14px}.muted{color:var(--muted)}.small{font-size:13px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--btc);font-weight:800;margin-bottom:10px}
+.btn{width:100%;border:0;border-radius:14px;padding:15px 16px;font-weight:800;font-size:16px;cursor:pointer;margin-top:10px;background:var(--btc);color:#100b06}.btn.secondary{background:#1b1b1b;color:var(--txt);border:1px solid var(--line)}.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.options{display:grid;gap:10px;margin-top:18px}.opt{padding:14px 15px;border:1px solid var(--line);border-radius:14px;background:var(--card2);color:var(--txt);text-align:left;font:inherit;cursor:pointer}.opt:hover,.opt.sel{border-color:var(--btc);box-shadow:inset 0 0 0 1px var(--btc)}.opt strong{display:block}.confidence{display:flex;gap:8px;margin:16px 0 4px}.confidence button{flex:1;padding:11px;border-radius:12px;border:1px solid var(--line);background:#151515;color:var(--txt)}.confidence button.sel{border-color:var(--btc);color:var(--btc)}
+.progress{height:5px;background:#222;border-radius:999px;overflow:hidden;margin:8px 0 22px}.progress>span{display:block;height:100%;background:var(--btc);transition:.25s}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tile{border:1px solid var(--line);border-radius:16px;padding:14px;background:#131313}.tile b{display:block;margin-bottom:3px}.route{border-left:3px solid var(--btc);padding:11px 0 11px 14px;margin:10px 0;background:linear-gradient(90deg,#f7931a0e,transparent)}
+.notice{border:1px solid #604216;background:#1b1409;border-radius:15px;padding:14px;margin:14px 0}.good{border-color:#245d34;background:#0d1c12}.case{border:1px solid #3c3428;background:#18140e;border-radius:16px;padding:16px;margin:16px 0}.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.resultrow{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid var(--line)}.level{font-size:12px;font-weight:800;border-radius:99px;padding:4px 8px;white-space:nowrap}.solid{background:#12311c;color:var(--ok)}.build{background:#302511;color:var(--warn)}.review{background:#2d1717;color:#ffb4b4}
+.score{display:flex;align-items:end;gap:10px;margin:12px 0 20px}.score .big{font-size:52px;font-weight:900;line-height:1}.arrow{font-size:28px;color:var(--btc)}
+a{color:var(--btc)}.footer{margin-top:20px;color:#777;font-size:12px;text-align:center}
+@media(max-width:520px){.card{padding:19px}.grid{grid-template-columns:1fr}h1{font-size:44px}}
+</style>
+</head>
+<body><main id="app"></main>
+<script>
+(function(){
+const dims=[
+{id:"money",name:"Dinero y contexto"},{id:"network",name:"Red y reglas"},{id:"custody",name:"Claves y custodia"},
+{id:"security",name:"Seguridad y estafas"},{id:"privacy",name:"Privacidad"},{id:"payments",name:"Pagos y usos reales"}];
+
+const pre=[
+{id:"money",q:"¿Qué describe mejor a Bitcoin?",o:["Una empresa que administra una moneda digital","Una red y protocolo monetario abierto","Una moneda emitida por bancos centrales","No sé"],a:1},
+{id:"network",q:"Si un minero intenta producir un bloque que rompe las reglas que verifica tu nodo, ¿qué puede hacer tu nodo?",o:["Aceptarlo porque lo creó un minero","Rechazarlo como inválido","Pedir permiso a un exchange","No sé"],a:1},
+{id:"custody",q:"¿Qué significa autocustodia?",o:["Controlar directamente las claves que autorizan tus fondos","Guardar bitcoin en cualquier aplicación","Tener una cuenta verificada en un exchange","No sé"],a:0},
+{id:"security",q:"Un supuesto soporte de wallet te pide tu frase semilla. ¿Qué corresponde hacer?",o:["Compartirla si verificaste su identidad","Compartir solo algunas palabras","No compartirla nunca","No sé"],a:2},
+{id:"privacy",q:"¿Cuál es una descripción más precisa de la privacidad en Bitcoin?",o:["Todas las transacciones son secretas","Las transacciones son públicas y las direcciones son seudónimas","Cada transacción muestra nombre y documento","No sé"],a:1},
+{id:"payments",q:"Para un pago pequeño y frecuente, ¿qué afirmación es más correcta?",o:["Lightning puede ser una opción, según contexto y necesidades","Siempre debe usarse la capa base","Bitcoin es necesariamente mejor que cualquier otro medio","No sé"],a:0}
+];
+const post=[
+{id:"money",q:"¿Cuál de estas afirmaciones describe mejor las reglas monetarias de Bitcoin?",o:["Una empresa decide la emisión según la demanda","La emisión sigue reglas del protocolo verificables por participantes de la red","Un banco central la ajusta cada año","No sé"],a:1},
+{id:"network",q:"¿Qué ocurre normalmente antes de que una transacción llegue a un bloque?",o:["Los nodos pueden validarla y retransmitirla","Un banco la autoriza","La blockchain la vuelve anónima","No sé"],a:0},
+{id:"custody",q:"Tenés saldo en una plataforma que controla las claves. ¿Qué implica?",o:["Tenés control directo de las claves","Dependés del custodio para mover esos fondos","La frase semilla está necesariamente en tu teléfono","No sé"],a:1},
+{id:"security",q:"¿Cuál es la regla más segura sobre una frase semilla?",o:["Se comparte solo con soporte oficial","Se guarda en fotos privadas","No se comparte con nadie que la solicite","No sé"],a:2},
+{id:"privacy",q:"Si una dirección de Bitcoin llega a vincularse con una identidad, ¿qué puede ocurrir?",o:["Parte de su historial público puede analizarse","La blockchain borra automáticamente el historial","Las transacciones anteriores se vuelven privadas","No sé"],a:0},
+{id:"payments",q:"¿Qué enseña mejor una comparación entre on-chain, Lightning y otros medios?",o:["Existe una herramienta correcta para todos los pagos","Cada opción tiene trade-offs según contexto","Lightning reemplaza obligatoriamente a todos los medios","No sé"],a:1}
+];
+
+const modules={
+money:{title:"Dinero y contexto",predict:"¿Quién decide cuánto dinero puede emitirse en distintos sistemas?",tryText:"Compará: dinero fiat, oro y Bitcoin. ¿En cuál las reglas de emisión están codificadas y pueden ser verificadas por cualquiera?",explain:"Bitcoin introduce reglas monetarias verificables por software. Eso no vuelve al dinero fiat inútil ni significa que Bitcoin resuelva todos los problemas monetarios.",debate:"Mito o matiz: “Si la emisión es limitada, el precio necesariamente sube.”",debateAns:"Falso. Una regla de emisión no garantiza demanda, precio ni rentabilidad.",apply:"Una red tiene una emisión programada pero nadie puede verificar las reglas. ¿Qué propiedad importante falta?",applyOpts:["Verificabilidad","Volatilidad","Una marca conocida"],applyA:0},
+network:{title:"Red y reglas",predict:"¿Quién tiene la última palabra si un minero propone un bloque inválido?",tryText:"Imaginá que un minero intenta crear bitcoin fuera de las reglas. Tu nodo revisa ese bloque. ¿Lo acepta por venir de un minero?",explain:"Los mineros construyen bloques candidatos mediante prueba de trabajo. Los nodos verifican transacciones y bloques contra las reglas que ejecutan. Un bloque inválido puede ser rechazado.",debate:"Mito o matiz: “Los mineros controlan Bitcoin.”",debateAns:"Matiz: tienen un rol importante en producir bloques, pero no pueden obligar a un nodo a aceptar reglas inválidas.",apply:"Una transacción llega a tu nodo antes de ser minada. ¿Qué puede hacer el nodo?",applyOpts:["Validarla según sus reglas","Esperar una autorización bancaria","Cambiar su monto"],applyA:0},
+custody:{title:"Claves y custodia",predict:"Si ves bitcoin en una app, ¿eso prueba que controlás las claves?",tryText:"Clasificá mentalmente: exchange custodial / wallet donde vos guardás el respaldo. ¿En cuál dependés de un tercero para mover los fondos?",explain:"Custodia y autocustodia son modelos distintos. Autocustodia significa controlar las claves; aumenta autonomía y también responsabilidad. No es una obligación para empezar a aprender.",debate:"Mito o matiz: “Autocustodia siempre es mejor para cualquier persona.”",debateAns:"Depende del conocimiento, contexto y capacidad de cuidar respaldos. Más control también trae más responsabilidad.",apply:"Una plataforma congela retiros y vos no tenés las claves. ¿Qué riesgo se materializó?",applyOpts:["Riesgo de custodio","Riesgo de halving","Riesgo de mempool"],applyA:0},
+security:{title:"Seguridad y estafas",predict:"¿Existe alguna situación legítima en la que soporte necesite tus 12 o 24 palabras?",tryText:"Mensaje: “Tu wallet está en riesgo. Respondé con tu seed para verificar propiedad”. Detectá la señal crítica.",explain:"La frase semilla permite recuperar/controlar la wallet. Quien la obtiene puede acceder a los fondos. Ningún soporte legítimo necesita que se la envíes.",debate:"Mito o matiz: “Si el perfil tiene tilde azul, puedo confiar.”",debateAns:"Falso. Una identidad o interfaz aparente no reemplaza verificar qué información te están pidiendo.",apply:"Un amigo te ofrece guardar una foto de tu seed en su nube “por seguridad”. ¿Qué principio aplica?",applyOpts:["Mantener el respaldo fuera de servicios online","Dividir la seed por WhatsApp","Confiar si es un amigo"],applyA:0},
+privacy:{title:"Privacidad",predict:"¿Bitcoin es anónimo?",tryText:"Una blockchain pública muestra direcciones, montos y movimientos. ¿Eso equivale a mostrar automáticamente nombre y documento?",explain:"Bitcoin se describe mejor como seudónimo. El historial es público, pero una dirección no trae por sí sola una identidad civil. Si se vinculan, parte del historial puede analizarse.",debate:"Mito o matiz: “Blockchain pública significa cero privacidad.”",debateAns:"Matiz. Hay información pública, pero identidad y dirección no son lo mismo. El contexto de uso importa.",apply:"Una dirección se publica junto al nombre de una empresa. ¿Qué cambia?",applyOpts:["Se facilita asociar actividad pública a esa identidad","Las transacciones se borran","La dirección se vuelve secreta"],applyA:0},
+payments:{title:"Pagos y usos reales",predict:"¿Para pagar un café usarías siempre la misma capa que para liquidar un monto grande?",tryText:"Compará tres opciones: capa base, Lightning y un medio tradicional. Cada una puede tener ventajas y límites según importe, velocidad, confianza y contexto.",explain:"Lightning puede ser útil para pagos pequeños y frecuentes. La capa base prioriza seguridad y liquidación. Ninguna herramienta es automáticamente correcta para todos los casos.",debate:"Mito o matiz: “Si un comercio acepta bitcoin, ya existe una economía circular.”",debateAns:"Falso. Una economía circular necesita circulación entre personas, comercios, proveedores, infraestructura y comunidad.",apply:"Un café quiere cobrar pagos pequeños con baja latencia. ¿Qué pregunta es más útil?",applyOpts:["Qué herramienta encaja mejor con sus necesidades y riesgos","Cómo maximizar el precio de BTC","Cómo eliminar todos los otros medios"],applyA:0,case:true}
+};
+
+let s=JSON.parse(localStorage.getItem("rutaBTC")||"null")||{screen:"landing",pre:[],post:[],interest:null,exp:null,route:[],moduleIndex:0,moduleStep:0,moduleAnswers:{},probes:[],form:"AB"};
+function save(){localStorage.setItem("rutaBTC",JSON.stringify(s))}
+function reset(){localStorage.removeItem("rutaBTC");s={screen:"landing",pre:[],post:[],interest:null,exp:null,route:[],moduleIndex:0,moduleStep:0,moduleAnswers:{},probes:[],form:"AB"};render()}
+function top(label){return '<div class="top"><div class="brand">DESCUBRIENDO BITCOIN</div><div class="badge">'+label+'</div></div>'}
+function card(x){return '<section class="card">'+x+'</section>'}
+function btn(label,fn,cls){return '<button class="btn '+(cls||'')+'" onclick="'+fn+'">'+label+'</button>'}
+function progress(n,d){return '<div class="progress"><span style="width:'+Math.round(n/d*100)+'%"></span></div>'}
+function go(screen){s.screen=screen;save();render();scrollTo(0,0)}
+function optionButtons(arr,fn,selected){return '<div class="options">'+arr.map((x,i)=>'<button class="opt '+(selected===i?'sel':'')+'" onclick="'+fn+'('+i+')">'+x+'</button>').join('')+'</div>'}
+
+window.chooseInterest=i=>{s.interest=i;save();render()};
+window.chooseExp=i=>{s.exp=i;save();render()};
+window.answerPre=function(i){
+ const idx=s.pre.length;
+ s.pre.push({id:pre[idx].id,ans:i,correct:i===pre[idx].a,certainty:i===pre[idx].o.length-1?0:null});
+ save();render()
+};
+window.certPre=function(v){s.pre[s.pre.length-1].certainty=v;save();render()};
+window.nextPre=function(){
+ if(s.pre.length<6){render();return}
+ const risky=s.pre.filter(x=>(x.id==="security"||x.id==="custody")&&!x.correct&&x.certainty===3);
+ s.probes=risky.slice(0,2).map(x=>x.id);
+ buildRoute();go(s.probes.length?"probe":"route")
+};
+function scoreOf(id){const x=s.pre.find(z=>z.id===id);if(!x)return 0;if(x.correct)return x.certainty===3?2:1;if(x.certainty===3)return -2;return -1}
+function buildRoute(){
+ let scores={};dims.forEach(d=>scores[d.id]=scoreOf(d.id));
+ let chosen=[];
+ const risky=s.probes;
+ if(risky.includes("security"))chosen.push("security");
+ if(risky.includes("custody")&&chosen.length<2)chosen.push("custody");
+ if(scores.money<=0&&s.exp===0&&!chosen.includes("money")&&chosen.length<2)chosen.push("money");
+ const weights={security:1.5,custody:1.5,network:1,privacy:1,money:1,payments:.8};
+ const interestMap=["money","network","security","payments",null];
+ const need=v=>v===-2?4:v===-1?3:v===0?2:v===1?1:0;
+ let rest=dims.filter(d=>!chosen.includes(d.id)).map(d=>({id:d.id,p:need(scores[d.id])*weights[d.id]+(interestMap[s.interest]===d.id?.5:0)})).sort((a,b)=>b.p-a.p);
+ while(chosen.length<2&&rest.length)chosen.push(rest.shift().id);
+ s.route=chosen;
+}
+window.answerProbe=function(i){
+ const id=s.probes[0];const correct=id==="security"?i===1:i===0;
+ s.moduleAnswers["probe_"+id]={ans:i,correct};s.probes.shift();save();render()
+};
+window.changeRoute=function(id){s.route[1]=id;save();render()};
+window.startRoute=function(){s.moduleIndex=0;s.moduleStep=0;go(s.route.includes("security")?"module":"safety")};
+window.moduleChoice=function(i){const id=s.route[s.moduleIndex],step=s.moduleStep;s.moduleAnswers[id+"_"+step]=i;s.moduleStep++;save();render()};
+window.nextModule=function(){s.moduleStep++;save();render()};
+window.applyModule=function(i){
+ const id=s.route[s.moduleIndex],m=modules[id];s.moduleAnswers[id+"_apply"]={ans:i,correct:i===m.applyA};
+ s.moduleStep=6;save();render()
+};
+window.finishModule=function(){
+ if(s.moduleIndex===0){s.moduleIndex=1;s.moduleStep=0;save();render();scrollTo(0,0)}else go("postIntro")
+};
+window.answerPost=function(i){
+ const idx=s.post.length;s.post.push({id:post[idx].id,ans:i,correct:i===post[idx].a,certainty:i===post[idx].o.length-1?0:null});save();render()
+};
+window.certPost=function(v){s.post[s.post.length-1].certainty=v;save();render()};
+window.nextPost=function(){if(s.post.length<6){render()}else go("result")};
+window.resetApp=reset;window.go=go;
+
+function render(){
+ let h="";
+ if(s.screen==="landing"){
+  h=top("MVP 0.1")+card('<div class="eyebrow">Tu Ruta Bitcoin</div><h1>¿Qué sabés <span class="orange">realmente</span> de Bitcoin?</h1><p>Un recorrido interactivo que se adapta a lo que ya sabés y a lo que todavía conviene revisar.</p><p class="muted">≈ 10 minutos · sin cuenta · sin precio · sin venderte nada.</p>'+btn(s.pre.length?"Seguir donde quedé":"Empezar","go('intro')")+(s.pre.length?btn("Empezar de nuevo","resetApp()","ghost"):""));
+ }
+ if(s.screen==="intro"){
+  h=top("Cómo funciona")+card('<div class="eyebrow">Antes de empezar</div><h2>Primero te escuchamos.</h2><div class="route"><b>1.</b> Respondés 6 preguntas que quedan en un sobre.</div><div class="route"><b>2.</b> Te sugerimos 2 paradas.</div><div class="route"><b>3.</b> Volvemos a preguntar y abrimos el sobre.</div><p class="muted small">No es un examen. Esto es educación y no una recomendación de inversión.</p>'+btn("Seguir","go('interest')"));
+ }
+ if(s.screen==="interest"){
+  h=top("Paso 1 de 3")+card('<div class="eyebrow">Tu punto de partida</div><h2>¿Qué te despierta más curiosidad?</h2><p class="muted">Elegí una. Solo la usamos para darle contexto a tu ruta.</p>'+optionButtons(["Dinero y ahorro","Tecnología","Seguridad","Pagos y comercios","No sé todavía"],"chooseInterest",s.interest)+(s.interest!==null?btn("Seguir","go('experience')"):""));
+ }
+ if(s.screen==="experience"){
+  h=top("Paso 2 de 3")+card('<div class="eyebrow">Experiencia práctica</div><h2>¿Qué hiciste alguna vez con bitcoin?</h2><p class="muted">Tener experiencia no significa saber más. Es otra dimensión.</p>'+optionButtons(["Nada todavía","Usé una app o plataforma","Manejé mis propias claves","Prefiero no decir"],"chooseExp",s.exp)+(s.exp!==null?btn("Abrir las 6 preguntas","go('pre')"):""));
+ }
+ if(s.screen==="pre"){
+  let idx=s.pre.length;
+  if(idx>=6){h=top("Sobre listo")+card('<div class="eyebrow">Punto de partida</div><h2>Listo. Tus respuestas quedan selladas.</h2><p>Las abrimos al final para comparar sin darte pistas ahora.</p>'+btn("Sellar y seguir","nextPre()")); }
+  else{
+   const q=pre[idx];const last=s.pre[s.pre.length-1];const answering=last&&last.id===q.id&&last.certainty===null;
+   h=top("Pregunta "+(idx+1)+" de 6")+progress(idx,6)+card('<h2>'+q.q+'</h2><p class="muted small">Podés elegir “No sé”. Es una respuesta válida.</p>'+(!answering?optionButtons(q.o,"answerPre"):('<h3>¿Qué tan seguro estás?</h3><div class="confidence">'+[1,2,3].map((v,i)=>'<button class="'+(last.certainty===v?'sel':'')+'" onclick="certPre('+v+')">'+["Poco","Algo","Mucho"][i]+'</button>').join('')+'</div>'+btn("Siguiente",last.certainty?"go('pre')":"void(0)"))));
+  }
+ }
+ if(s.screen==="probe"){
+  const id=s.probes[0];
+  if(!id){buildRoute();go("route");return}
+  const isSec=id==="security";
+  const q=isSec?"Un mensaje dice ser del soporte oficial. Nunca te pide la seed por chat, pero te manda un link para 'validarla' en una web. ¿Qué hacés?":"Tenés fondos en una plataforma y no poseés ninguna frase o clave de recuperación propia. ¿Quién controla técnicamente las claves?";
+  const os=isSec?["Entro si el dominio parece correcto","No ingreso la seed en ese enlace","Pido confirmación por mensaje privado"]:["La plataforma","Yo directamente","Nadie"];
+  h=top("Una situación más")+card('<div class="eyebrow">Sin feedback todavía</div><h2>'+q+'</h2>'+optionButtons(os,"answerProbe"));
+ }
+ if(s.screen==="route"){
+  const available=dims.filter(d=>!s.route.includes(d.id));
+  h=top("Tu ruta")+card('<div class="eyebrow">Personalización</div><h2>Te sugerimos 2 paradas.</h2><p class="muted">No es una etiqueta sobre vos. Es una ruta para esta sesión.</p>'+s.route.map((id,i)=>'<div class="route"><b>Parada '+(i+1)+' · '+modules[id].title+'</b><div class="small muted">'+(i===0?"Hay una idea que vale la pena revisar primero.":"Es el siguiente concepto con mayor valor para tu recorrido.")+'</div></div>').join('')+btn("Empezar mi ruta","startRoute()")+ (available.length?'<p class="small muted" style="margin-top:16px">¿Preferís cambiar la segunda parada?</p>'+available.map(d=>'<button class="opt" onclick="changeRoute(\''+d.id+'\')">'+d.name+'</button>').join(''):""));
+ }
+ if(s.screen==="safety"){
+  h=top("Regla de seguridad")+card('<div class="eyebrow">40 segundos importantes</div><h2>Tu frase semilla no se comparte.</h2><div class="notice"><b>Nadie legítimo necesita tus 12 o 24 palabras.</b><br><span class="muted">Ni soporte, ni un banco, ni una comunidad, ni este proyecto.</span></div>'+btn("Entendido","go('module')"));
+ }
+ if(s.screen==="module"){
+  const id=s.route[s.moduleIndex],m=modules[id],st=s.moduleStep;
+  if(st===0)h=top("Parada "+(s.moduleIndex+1)+" de 2")+card('<div class="eyebrow">'+m.title+'</div><h2>Dos minutos para conectar una idea.</h2><p class="muted">Predecí → Probá → Entendé → Debatí → Aplicá.</p>'+btn("Empezar","nextModule()"));
+  if(st===1)h=top("Predecí")+card('<h2>'+m.predict+'</h2>'+optionButtons(["Tengo una idea","No estoy seguro"],"moduleChoice"));
+  if(st===2)h=top("Probá")+card('<div class="eyebrow">Experimento mental</div><h2>'+m.tryText+'</h2><p class="muted">No hace falta acertar. La idea es mirar el mecanismo.</p>'+btn("Ver qué pasa","nextModule()"));
+  if(st===3)h=top("Entendé")+card('<div class="eyebrow">Lo importante</div><h2>'+m.title+'</h2><p>'+m.explain+'</p>'+btn("Seguir","nextModule()"));
+  if(st===4)h=top("Debatí")+card('<div class="eyebrow">Mito o matiz</div><h2>'+m.debate+'</h2><div class="notice"><b>Lectura:</b> '+m.debateAns+'</div>'+btn("Seguir","nextModule()"));
+  if(st===5){
+   const c=m.case?'<div class="case"><div class="kicker">Caso semilla · Uruguay</div><h3>Punta Bitcoin</h3><p>En Punta del Este trabaja educación, comunidad, comercios y Lightning alrededor de una economía circular Bitcoin <b>en construcción</b>.</p><p class="small muted"><b>Límite:</b> es un aliado local de DBU y todavía no hay evidencia suficiente para presentarlo como caso de éxito. Se usa como experiencia para estudiar, no como prueba.</p></div>':'';
+   h=top(m.case?"Demostrar":"Aplicá")+card(c+'<div class="eyebrow">Aplicá en otro contexto</div><h2>'+m.apply+'</h2>'+optionButtons(m.applyOpts,"applyModule"));
+  }
+  if(st===6){
+   const a=s.moduleAnswers[id+"_apply"];h=top("Cierre de parada")+card('<div class="eyebrow">'+m.title+'</div><h2>'+(a&&a.correct?"Bien razonado.":"Conviene mirarlo otra vez.")+'</h2><p>'+m.explain+'</p><p class="muted small">Una respuesta no define cuánto sabés. Sumamos evidencias a lo largo del recorrido.</p>'+btn(s.moduleIndex===0?"Ir a la segunda parada":"Ir al cierre","finishModule()"));
+  }
+ }
+ if(s.screen==="postIntro")h=top("Última parte")+card('<div class="eyebrow">Antes de abrir el sobre</div><h2>6 preguntas parecidas. No iguales.</h2><p>Después comparamos tu punto de partida con lo que respondés ahora.</p>'+btn("Abrir preguntas finales","go('post')"));
+ if(s.screen==="post"){
+  const idx=s.post.length;
+  if(idx>=6){h=top("Sobre listo")+card('<div class="eyebrow">Fin de la medición</div><h2>Ahora sí: abrimos el sobre.</h2>'+btn("Ver mi resultado","nextPost()"))}
+  else{
+   const q=post[idx],last=s.post[s.post.length-1],answering=last&&last.id===q.id&&last.certainty===null;
+   h=top("Final "+(idx+1)+" de 6")+progress(idx,6)+card('<h2>'+q.q+'</h2>'+(!answering?optionButtons(q.o,"answerPost"):('<h3>¿Qué tan seguro estás?</h3><div class="confidence">'+[1,2,3].map((v,i)=>'<button class="'+(last.certainty===v?'sel':'')+'" onclick="certPost('+v+')">'+["Poco","Algo","Mucho"][i]+'</button>').join('')+'</div>'+btn("Siguiente",last.certainty?"go('post')":"void(0)"))));
+  }
+ }
+ if(s.screen==="result"){
+  const preScore=s.pre.filter(x=>x.correct).length,postScore=s.post.filter(x=>x.correct).length;
+  function lvl(id){const a=s.pre.find(x=>x.id===id),b=s.post.find(x=>x.id===id),ap=s.moduleAnswers[id+"_apply"];let n=(a&&a.correct?1:0)+(b&&b.correct?1:0)+(ap&&ap.correct?1:0);return n>=2?["Bien encaminado","solid"]:n>=1?["En construcción","build"]:["Conviene revisar","review"]}
+  h=top("Tu mapa")+card('<div class="eyebrow">Abrimos el sobre</div><h2>Esto es una guía, no una nota.</h2><div class="score"><div><div class="small muted">ANTES</div><div class="big">'+preScore+'/6</div></div><div class="arrow">→</div><div><div class="small muted">AHORA</div><div class="big">'+postScore+'/6</div></div></div><p class="muted small">Responder dos veces también puede ayudar. Por eso no interpretamos esta diferencia como una prueba causal de aprendizaje.</p><h3 style="margin-top:24px">Tu mapa de esta sesión</h3>'+dims.map(d=>{const l=lvl(d.id);return '<div class="resultrow"><span>'+d.name+'</span><span class="level '+l[1]+'">'+l[0]+'</span></div>'}).join('')+'<div class="notice good"><b>Siguiente paso</b><br>Revisá primero cualquier dimensión marcada “Conviene revisar”. También podés seguir leyendo, practicar otro módulo, analizar una crítica, ir a un evento, sumarte a la comunidad o no hacer nada por ahora.</div>'+btn("Explorar otro módulo","go('route')","secondary")+btn("Borrar mis datos de este dispositivo","resetApp()","ghost")+'<p class="footer">Educación Bitcoin · no es recomendación financiera ni de compra.</p>');
+ }
+ document.getElementById("app").innerHTML=h;
+}
+render();
+})();
+</script></body></html>
