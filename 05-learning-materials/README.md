@@ -1,26 +1,51 @@
 # Materiales educativos
 
-Esta carpeta reúne los contenidos reutilizables de Descubriendo Bitcoin.
+Esta carpeta convierte la clase introductoria de Descubriendo Bitcoin en materiales abiertos, fáciles de leer, adaptar y reutilizar.
 
-La clase introductoria trabaja Bitcoin por capas, empezando por el dinero y terminando en seguridad, casos reales y próximos pasos.
+Los temas **no son diez cursos separados**. Forman parte de un mismo recorrido introductorio.
 
-## Recorrido base
+## Recorrido
 
-1. Historia del dinero
-2. Problemas del dinero fiat
-3. Por qué nació Bitcoin
-4. Qué es Bitcoin
-5. Minería, nodos y consenso
-6. Transacciones y blockchain
-7. Autocustodia
-8. Seguridad y riesgos
-9. Casos reales y usos
-10. Mitos, debate y próximos pasos
+1. [Historia del dinero](01-historia-del-dinero.md)
+2. [Dinero fiat](02-dinero-fiat.md)
+3. [Por qué nació Bitcoin](03-por-que-nacio-bitcoin.md)
+4. [Qué es Bitcoin](04-que-es-bitcoin.md)
+5. [Minería, nodos y consenso](05-mineria-nodos-consenso.md)
+6. [Autocustodia](06-autocustodia.md)
+7. [Seguridad y riesgos](07-seguridad-y-riesgos.md)
+8. [Casos reales y usos](08-casos-reales-y-usos.md)
+9. [Mitos y debates](09-mitos-y-debates.md)
+10. [Próximos pasos](10-proximos-pasos.md)
 
-## Cómo usar estos materiales
+## Cómo usar este contenido
 
-No son diez cursos separados.
+Una comunidad puede:
 
-Forman parte de **una misma clase introductoria** y pueden adaptarse según la audiencia y el tiempo disponible.
+- usar el recorrido completo;
+- adaptar ejemplos al contexto local;
+- profundizar algunos temas;
+- traducir los materiales;
+- proponer mejoras;
+- combinarlo con un caso real de su territorio.
 
-La versión editorial completa se mantiene como material para participantes. En próximas iteraciones, cada tema se publicará también en formato Markdown para facilitar traducciones, adaptaciones y mejoras comunitarias.
+La prioridad es mantener el enfoque:
+
+**claro · introductorio · responsable · no especulativo**
+
+## Para facilitadores
+
+No hace falta leer estos textos palabra por palabra durante un encuentro.
+
+Usalos como:
+
+- base conceptual;
+- guía de preparación;
+- referencia para preguntas;
+- material de seguimiento;
+- punto de partida para presentaciones.
+
+## Para participantes
+
+La idea es poder volver a un concepto después del evento sin depender del recuerdo de la charla.
+
+> Bitcoin no se aprende de golpe. Se aprende por capas.
