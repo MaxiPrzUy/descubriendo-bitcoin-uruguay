@@ -1,4 +1,7 @@
-# Encuesta de entrada
+# Encuesta de entrada — instrumento V1 / piloto 2026
+
+> **Estado:** instrumento histórico utilizado en el piloto inicial.  
+> Se conserva para trazabilidad y comparación con los primeros eventos. Para futuras versiones, ver [Protocolo de medición V2](measurement-protocol-v2.md).
 
 **ANÓNIMA · aproximadamente 3 minutos**
 
@@ -79,6 +82,6 @@ Escala de **1 a 5**
 
 ## Para qué sirve
 
-Estas mismas cinco preguntas se repiten después de la clase.
+En el piloto 2026 estas mismas cinco preguntas se repitieron después de la clase.
 
-Eso permite comparar conocimiento antes/después con una medida simple, transparente y replicable.
+Esto permite una comparación simple, pero no debe interpretarse como un instrumento definitivo: repetir exactamente los mismos ítems puede introducir efecto de memoria. La V2 utilizará formas paralelas y certeza por respuesta.
