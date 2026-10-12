@@ -1,5 +1,8 @@
 # KPI Framework
 
+> **Importante:** los valores de esta página son **metas del programa**, no resultados alcanzados.  
+> Las métricas verificadas del piloto se publican por separado.
+
 Descubriendo Bitcoin Uruguay measures success through quantitative and qualitative indicators.
 
 ## Short-term KPIs
@@ -12,9 +15,9 @@ Descubriendo Bitcoin Uruguay measures success through quantitative and qualitati
 - Have at least 300 opt-in participants join the educational database, WhatsApp groups, or community channels.
 - Collect at least 250 pre-event surveys.
 - Collect at least 250 post-event surveys.
-- Measure at least a 25% improvement in understanding of Bitcoin, self-custody, financial freedom, digital sovereignty, security, and responsible use.
+- Target a measurable improvement in Bitcoin understanding. The original program target was 25%, but the exact learning metric must be defined by the measurement protocol and should not imply that every listed concept was directly measured.
 - Achieve an average satisfaction score of at least 4/5.
-- Achieve a positive NPS.
+- Track NPS as a secondary experience metric. NPS is not evidence of learning.
 - Involve at least 3 institutions, universities, educational spaces, or local partners.
 - Reach at least 100,000 views or people reached on social media.
 - Publish at least 24 educational content pieces.
