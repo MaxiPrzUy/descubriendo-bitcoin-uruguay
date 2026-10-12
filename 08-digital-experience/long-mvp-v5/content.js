@@ -1,5 +1,5 @@
 window.DBU_CONTENT = {
-  version: "4.0.0-beta",
+  version: "5.1.0-beta",
   worlds: [
     {
       id:"fundamentals", n:1, title:"De dinero a Bitcoin", icon:"▤",
@@ -9,7 +9,7 @@ window.DBU_CONTENT = {
         {
           id:"functions", title:"Qué hace el dinero", icon:"↔", concept:"Funciones del dinero",
           intro:"Antes de Bitcoin, una pregunta más simple: ¿para qué usamos dinero?",
-          mechanic:{type:"choice",prompt:"Querés comprar un café, pero solo tenés tomates y el café no los necesita. ¿Qué ayudaría?",options:["Algo que ambos acepten","Un celular más rápido","Ponerle un precio mayor a los tomates"],answer:0},
+          mechanic:{type:"choice",prompt:"Querés comprar un café, pero solo tenés tomates y el café no los necesita. ¿Qué herramienta resuelve mejor el problema?",options:["Usar algo que ambos acepten como medio de intercambio","Acordar que el café te lo cobre más adelante","Buscar a otra persona que sí quiera tus tomates"],answer:0},
           explain:{title:"Un medio común destraba el intercambio",text:"El dinero puede facilitar intercambios, servir para comparar precios y trasladar valor en el tiempo. No significa que todas las sociedades hayan pasado históricamente por una etapa de trueque."},
           critical:{q:"¿El dinero siempre conserva igual poder de compra?",options:["Sí","No","Depende del plazo y del contexto"],answer:1,feedback:"No. Distintos dineros pueden ganar o perder poder de compra."},
           transfer:{q:"Guardaste dinero para el mes que viene y perdió mucho poder de compra. ¿Qué función se debilitó?",options:["Reserva de valor","Medio de intercambio","Unidad de cuenta"],answer:0}
