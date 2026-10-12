@@ -1,84 +1,204 @@
-# How to Replicate Descubriendo Bitcoin Uruguay
+# Cómo replicar una edición
 
-This guide is intended for communities, educators, institutions, and local organizers who want to replicate or adapt the Descubriendo Bitcoin Uruguay model.
+Esta guía está pensada para comunidades, educadores, instituciones y organizadores locales.
 
-## Step 1 — Define the audience
+La idea es simple: **que puedas organizar una edición sin tener que inventar el sistema desde cero**.
 
-Choose who the workshop is for:
+---
 
-- General public.
-- Students.
-- Universities.
-- Technical schools.
-- Merchants.
-- Entrepreneurs.
-- Tourism operators.
-- Professionals.
-- Local communities.
+## 1. Definí la audiencia
 
-Adapt the language and examples to that audience.
+No es lo mismo una charla para estudiantes que para comercios.
 
-## Step 2 — Choose the format
+Ejemplos:
 
-Recommended duration: 90 to 120 minutes.
+- público general;
+- universidades;
+- estudiantes;
+- comercios;
+- turismo;
+- emprendedores;
+- profesionales;
+- comunidades locales.
 
-Suggested structure:
+Preguntate:
 
-1. Welcome.
-2. Pre-event survey.
-3. Bitcoin introduction.
-4. Debate and questions.
-5. Real-world use case or invited speaker.
-6. Post-event survey.
-7. Community invitation.
+**¿Qué necesita entender esta audiencia para que el encuentro le resulte útil?**
 
-## Step 3 — Use the D4 methodology
+---
 
-Follow the D4 framework:
+## 2. Elegí el formato
 
-- Discover.
-- Debate.
-- Demonstrate.
-- Do the next step.
+Para una primera edición recomendamos entre **90 y 120 minutos**.
 
-## Step 4 — Measure impact
+Estructura base:
 
-Use pre- and post-event surveys to measure:
+1. bienvenida;
+2. encuesta de entrada;
+3. Descubrir;
+4. Debatir;
+5. Demostrar;
+6. preguntas finales;
+7. encuesta de salida;
+8. Dar el siguiente paso.
 
-- Previous knowledge.
-- Learning improvement.
-- Satisfaction.
-- NPS.
-- Future topics of interest.
-- Community interest.
+---
 
-## Step 5 — Build community
+## 3. Prepará el contenido
 
-Invite participants to join a voluntary community channel, mailing list, Luma database, or WhatsApp group.
+Una clase introductoria puede recorrer:
 
-The goal is for learning to continue after the workshop.
+- historia del dinero;
+- dinero fiat;
+- por qué nació Bitcoin;
+- qué es Bitcoin;
+- minería, nodos y consenso;
+- transacciones y blockchain;
+- autocustodia;
+- seguridad;
+- usos reales;
+- mitos y preguntas;
+- próximos pasos.
 
-## Step 6 — Document the event
+No hace falta profundizar todo por igual.
 
-Collect:
+El objetivo es dar un mapa mental claro.
 
-- Attendance numbers.
-- Registrations.
-- Survey results.
-- Photos.
-- Videos.
-- Lessons learned.
-- Questions asked by the audience.
-- Potential local leaders or partners.
+---
 
-## Step 7 — Share learnings
+## 4. Elegí qué vas a demostrar
 
-Use the results to improve future editions and help other communities replicate the model.
+La parte “Demostrar” mejora mucho cuando existe un caso local.
 
-## Important principles
+Puede ser:
 
-- Do not provide financial advice.
-- Do not promote trading.
-- Do not promise financial returns.
-- Respect participant consent and privacy.
-- Keep the focus on Bitcoin education, self-custody, open knowledge, and community.
+- un comercio;
+- una wallet;
+- un pago Lightning;
+- una comunidad;
+- una economía circular;
+- un nodo;
+- una experiencia de autocustodia;
+- un invitado local.
+
+La demostración debe estar al servicio del aprendizaje, no de vender un producto.
+
+---
+
+## 5. Medí el punto de partida
+
+Antes de empezar:
+
+- entregá la encuesta;
+- explicá que es anónima;
+- pedí un código de participante;
+- reservá 3 minutos.
+
+Usá el mismo código al final.
+
+[Encuesta de entrada →](../03-surveys-and-measurement/pre-event-survey.md)
+
+---
+
+## 6. Facilitá, no recites
+
+La charla no debería sentirse como una clase cerrada.
+
+Dejá espacio para:
+
+- preguntas;
+- desacuerdos;
+- dudas;
+- ejemplos locales;
+- críticas;
+- experiencias personales.
+
+El método D4 funciona mejor cuando hay conversación real.
+
+---
+
+## 7. Cerrá con un siguiente paso
+
+No presiones a nadie a comprar o usar Bitcoin.
+
+Ofrecé caminos:
+
+- leer;
+- preguntar;
+- revisar materiales;
+- sumarse a una comunidad;
+- asistir a otra actividad;
+- experimentar con una herramienta cuando esté listo.
+
+---
+
+## 8. Medí al final
+
+Repetí las mismas cinco preguntas de conocimiento.
+
+Sumá:
+
+- claridad;
+- NPS;
+- comprensión declarada.
+
+[Encuesta de salida →](../03-surveys-and-measurement/post-event-survey.md)
+
+---
+
+## 9. Documentá
+
+Después del encuentro registrá:
+
+- fecha;
+- ciudad;
+- espacio;
+- audiencia;
+- asistentes;
+- registros;
+- encuestas pareadas;
+- speakers;
+- caso demostrado;
+- fotos;
+- principales preguntas;
+- aprendizajes;
+- qué cambiarías para la próxima edición.
+
+No publiques datos personales de asistentes.
+
+---
+
+## 10. Compartí lo aprendido
+
+Una edición completa no termina con la foto grupal.
+
+Publicá un recap breve y, cuando sea posible:
+
+- métricas;
+- aprendizajes;
+- mejoras;
+- materiales;
+- próximos pasos.
+
+Eso hace que el modelo pueda evolucionar y que otras comunidades aprendan de tu experiencia.
+
+---
+
+## Principios no negociables
+
+- No asesoramiento financiero.
+- No trading.
+- No promesas de rentabilidad.
+- No presión para comprar bitcoin.
+- Privacidad y consentimiento.
+- Lenguaje para principiantes.
+- Riesgos y responsabilidades explícitos.
+- Independencia educativa.
+
+## ¿Querés empezar mañana?
+
+Usá este orden:
+
+**audiencia → espacio → contenido → caso real → encuestas → evento → medición → documentación → comunidad**
+
+Y apoyate en el [checklist del organizador](organizer-checklist.md).

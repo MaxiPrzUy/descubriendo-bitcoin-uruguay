@@ -1,84 +1,95 @@
-# How to Replicate Descubriendo Bitcoin Uruguay
+# Checklist del organizador
 
-This guide is intended for communities, educators, institutions, and local organizers who want to replicate or adapt the Descubriendo Bitcoin Uruguay model.
+Una lista simple para producir una edición de Descubriendo Bitcoin.
 
-## Step 1 — Define the audience
+## Antes del evento
 
-Choose who the workshop is for:
+### Audiencia y objetivo
 
-- General public.
-- Students.
-- Universities.
-- Technical schools.
-- Merchants.
-- Entrepreneurs.
-- Tourism operators.
-- Professionals.
-- Local communities.
+- [ ] Definir para quién es el encuentro.
+- [ ] Definir qué debería entender una persona al terminar.
+- [ ] Adaptar lenguaje y ejemplos.
+- [ ] Confirmar duración.
 
-Adapt the language and examples to that audience.
+### Espacio
 
-## Step 2 — Choose the format
+- [ ] Confirmar lugar.
+- [ ] Confirmar capacidad.
+- [ ] Proyector o pantalla.
+- [ ] Sonido, si hace falta.
+- [ ] Sillas.
+- [ ] Mesa de recepción.
+- [ ] Conectividad.
+- [ ] Señalización básica.
 
-Recommended duration: 90 to 120 minutes.
+### Contenido
 
-Suggested structure:
+- [ ] Presentación final revisada.
+- [ ] Método D4 integrado.
+- [ ] Caso real o invitado confirmado.
+- [ ] Preguntas frecuentes preparadas.
+- [ ] Recursos para próximos pasos.
 
-1. Welcome.
-2. Pre-event survey.
-3. Bitcoin introduction.
-4. Debate and questions.
-5. Real-world use case or invited speaker.
-6. Post-event survey.
-7. Community invitation.
+### Medición
 
-## Step 3 — Use the D4 methodology
+- [ ] Encuestas de entrada impresas o disponibles.
+- [ ] Lapiceras.
+- [ ] Código anónimo explicado.
+- [ ] Encuesta de salida preparada.
+- [ ] Sistema para registrar asistencia sin invadir privacidad.
 
-Follow the D4 framework:
+### Materiales
 
-- Discover.
-- Debate.
-- Demonstrate.
-- Do the next step.
+- [ ] Guía o material educativo.
+- [ ] QR de recursos.
+- [ ] QR de comunidad.
+- [ ] Links revisados.
+- [ ] Materiales de aliados correctamente identificados.
 
-## Step 4 — Measure impact
+### Producción
 
-Use pre- and post-event surveys to measure:
+- [ ] Agenda.
+- [ ] Roles del equipo.
+- [ ] Check-in.
+- [ ] Speaker brief.
+- [ ] Foto/video.
+- [ ] Agua / café / merienda si aplica.
+- [ ] Plan B técnico.
 
-- Previous knowledge.
-- Learning improvement.
-- Satisfaction.
-- NPS.
-- Future topics of interest.
-- Community interest.
+---
 
-## Step 5 — Build community
+## Durante
 
-Invite participants to join a voluntary community channel, mailing list, Luma database, or WhatsApp group.
+- [ ] Dar bienvenida.
+- [ ] Explicar qué es y qué no es el programa.
+- [ ] Completar encuesta de entrada.
+- [ ] Descubrir.
+- [ ] Debatir.
+- [ ] Demostrar.
+- [ ] Abrir preguntas.
+- [ ] Completar encuesta de salida.
+- [ ] Dar el siguiente paso.
+- [ ] Recordar recursos y comunidad.
+- [ ] Registrar fotos sin interrumpir la experiencia.
 
-The goal is for learning to continue after the workshop.
+---
 
-## Step 6 — Document the event
+## Después
 
-Collect:
+- [ ] Contar asistentes.
+- [ ] Ordenar encuestas.
+- [ ] Parear códigos anónimos.
+- [ ] Calcular respuestas antes/después.
+- [ ] Registrar claridad y NPS.
+- [ ] Guardar fotos y videos.
+- [ ] Anotar preguntas frecuentes.
+- [ ] Anotar qué salió bien.
+- [ ] Anotar qué mejorar.
+- [ ] Enviar recursos prometidos.
+- [ ] Hacer seguimiento con aliados.
+- [ ] Publicar un recap.
+- [ ] Actualizar el repositorio si surgió una mejora útil.
 
-- Attendance numbers.
-- Registrations.
-- Survey results.
-- Photos.
-- Videos.
-- Lessons learned.
-- Questions asked by the audience.
-- Potential local leaders or partners.
+## Regla final
 
-## Step 7 — Share learnings
-
-Use the results to improve future editions and help other communities replicate the model.
-
-## Important principles
-
-- Do not provide financial advice.
-- Do not promote trading.
-- Do not promise financial returns.
-- Respect participant consent and privacy.
-- Keep the focus on Bitcoin education, self-custody, open knowledge, and community.
+Si otra persona no puede entender qué hiciste y repetirlo, todavía falta documentar.

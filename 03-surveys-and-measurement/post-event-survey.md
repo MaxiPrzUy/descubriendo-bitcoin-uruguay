@@ -1,20 +1,83 @@
-# Post-event Survey
+# Encuesta de salida — instrumento V1 / piloto 2026
 
-This survey is used at the end of each workshop to measure learning, satisfaction, community interest, and future educational needs.
+> **Estado:** instrumento histórico utilizado en el piloto inicial.  
+> Se conserva para trazabilidad. Para futuras versiones, ver [Protocolo de medición V2](measurement-protocol-v2.md).
 
-## Suggested questions
+**ANÓNIMA · aproximadamente 3 minutos**
 
-1. After the workshop, how much do you feel you understand Bitcoin? Scale from 1 to 5.
-2. Did the workshop help you understand Bitcoin better?
-3. How satisfied were you with the activity? Scale from 1 to 10.
-4. Would you recommend this workshop to another person? Scale from 0 to 10.
-5. What was the most valuable thing you learned?
-6. What would you improve for future editions?
-7. What topic would you like to explore further?
-8. Would you like to participate in future workshops?
-9. Would you like to join the community and receive future educational content?
-10. Would you like to collaborate as a volunteer, partner, or local reference?
+Esta encuesta se realiza al terminar la clase.
 
-## Consent
+Usá el **mismo código anónimo** de la encuesta de entrada.
 
-All participant data must be collected voluntarily and used only for educational follow-up and impact measurement.
+## Las mismas 5 preguntas
+
+### 1. ¿Qué describe mejor a Bitcoin?
+
+- Una empresa tecnológica
+- Una red y protocolo monetario abierto
+- Una moneda emitida por un gobierno
+- No sé
+
+### 2. ¿Qué significa autocustodia?
+
+- Que un banco guarda tus bitcoin
+- Que controlás directamente tus claves
+- Que comprás bitcoin en un exchange
+- No sé
+
+### 3. ¿Qué es una frase semilla?
+
+- Un nombre de usuario público
+- Un respaldo para recuperar una wallet
+- Una contraseña que soporte puede resetear
+- No sé
+
+### 4. ¿Qué afirmación sobre Bitcoin es más correcta?
+
+- Es completamente anónimo
+- Sus transacciones son públicas y es seudónimo
+- Cada transacción muestra nombre y documento
+- No sé
+
+### 5. ¿Qué afirmación describe mejor la emisión de bitcoin?
+
+- Tiene un límite programado por las reglas
+- La define un banco central
+- La define un exchange
+- No sé
+
+## Después de la clase
+
+### Ahora, ¿qué tan claro tenés qué problema busca resolver Bitcoin?
+
+Escala de **1 a 5**
+
+1 = Nada claro  
+5 = Muy claro
+
+## Tu experiencia
+
+### ¿Cómo evaluarías la claridad de la clase?
+
+Escala de **1 a 5**
+
+1 = Muy baja  
+5 = Excelente
+
+### ¿Qué tan probable es que recomiendes Descubriendo Bitcoin a otra persona?
+
+Escala **0 a 10**
+
+## Cómo usar los resultados
+
+Para analizar el piloto 2026, compará la encuesta de entrada y salida por código anónimo.
+
+Podés observar:
+
+- respuestas correctas antes y después;
+- cambio en comprensión declarada;
+- claridad de la clase;
+- NPS;
+- cantidad de participantes con encuestas pareadas.
+
+No publiques información que permita identificar participantes.

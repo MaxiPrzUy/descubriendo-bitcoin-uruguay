@@ -1,25 +1,72 @@
-# Project Summary
+# Resumen del proyecto
 
-Descubriendo Bitcoin Uruguay is an open, measurable, and replicable Bitcoin education program designed to introduce new audiences to Bitcoin through free, in-person workshops.
+**Descubriendo Bitcoin Uruguay** es un programa educativo abierto, medible y replicable impulsado por Plugin para acercar Bitcoin a nuevas audiencias desde cero.
 
-The project is being piloted in Maldonado, Uruguay, with the goal of creating a clear and responsible educational pathway for people starting from zero.
+Su enfoque es introductorio, responsable y no especulativo.
 
-## What problem does it address?
+## El problema
 
-Many people still associate Bitcoin mainly with price, trading, scams, or speculation. At the same time, few have access to clear, responsible, non-commercial education about why Bitcoin exists, how it works, and how it can relate to self-custody, financial freedom, digital sovereignty, and open participation in a global monetary network.
+Para muchas personas, Bitcoin llega primero como precio, trading, estafas, promesas o titulares.
 
-## What is the solution?
+Eso hace difícil separar:
 
-The project creates a structured educational program based on workshops, open materials, community follow-up, pre- and post-event surveys, measurable KPIs, and a final impact report.
+- qué es Bitcoin;
+- por qué existe;
+- cómo funciona;
+- qué riesgos implica;
+- qué usos tiene;
+- qué significa autocustodia;
+- qué debates siguen abiertos.
 
-The goal is not only to organize events, but to build an educational model that can be documented, improved, and replicated by other communities.
+## La propuesta
 
-## First stage
+Descubriendo Bitcoin crea una puerta de entrada basada en cinco componentes:
 
-The first stage will include six free workshops in Maldonado, Uruguay, during 2026.
+1. **contenido educativo claro**;
+2. **método D4**;
+3. **casos reales y contexto local**;
+4. **medición antes y después**;
+5. **continuidad comunitaria**.
 
-The program will measure attendance, registrations, learning improvement, satisfaction, community growth, digital reach, and institutional participation.
+El objetivo no es convencer a nadie de comprar bitcoin.
 
-## Long-term vision
+Es ayudar a que una persona pueda entender mejor el tema y tomar sus propias decisiones con más criterio.
 
-The long-term goal is to build a national Bitcoin education network in Uruguay and create a model that can be adapted by Spanish-speaking communities across Latin America.
+## Primer piloto
+
+El programa fue lanzado en **Punta del Este, Uruguay, el 23 de septiembre de 2026**.
+
+La primera edición reunió aproximadamente **40 personas** e incluyó:
+
+- charla introductoria;
+- encuesta de entrada;
+- metodología D4;
+- Punta Bitcoin como caso local;
+- materiales educativos;
+- encuesta de salida;
+- recursos y continuidad comunitaria.
+
+## Qué estamos construyendo
+
+El piloto sirve para probar y mejorar:
+
+- la clase introductoria;
+- la metodología;
+- las encuestas;
+- la experiencia del participante;
+- la documentación;
+- el toolkit de replicación.
+
+Cada edición debería dejar mejores materiales para la siguiente.
+
+## Visión
+
+La visión es que comunidades, educadores e instituciones puedan estudiar este modelo, adaptarlo a su contexto y documentar sus propios aprendizajes.
+
+Uruguay es el punto de partida, no el límite geográfico.
+
+## Principio
+
+> Educación antes que especulación.
+
+El proyecto busca combinar claridad, pensamiento crítico, autocustodia, seguridad, casos reales y comunidad sin convertir la educación en una campaña comercial.
