@@ -49,3 +49,9 @@ Usalos como:
 La idea es poder volver a un concepto después del evento sin depender del recuerdo de la charla.
 
 > Bitcoin no se aprende de golpe. Se aprende por capas.
+
+## Descarga
+
+[**Descargar Edición 01 · Guía de la clase introductoria (PDF)**](downloads/descubriendo-bitcoin-edicion-01.pdf)
+
+[Ver todas las descargas →](downloads/README.md)
