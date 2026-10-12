@@ -79,7 +79,7 @@ function map(){const count=completedCount();const practiceReady=DEMO|| (s.practi
 
 function lessonReward(){const l=lessonBy(s.lesson),ok=!!s.data[`${l.id}_transfer_ok`];return top()+card(`<div class="eyebrow">Lección terminada</div><h2>${ok?'Lo demostraste.':'La pieza ya apareció.'}</h2>${stampAward(l,ok)}<p class="muted">${ok?'No ganaste el sello por terminar: lo ganaste por aplicar la idea en una situación distinta.':'No pasa nada por equivocarse. El error queda como pista para la práctica futura.'}</p>${btn('Volver al camino','Actions.afterReward()')}`)}
 
-function lesson(id,step){if(id==='functions')return lessonFunctions(step);if(id==='ledger')return lessonLedger(step);if(id==='double')return lessonDouble(step);if(id==='intermediary')return lessonIntermediary(step);if(id==='bitcoin')return lessonBitcoin(step);return lessonRisk(step)}
+function lesson(id,step){if(id==='functions')return lessonFunctions(step);if(id==='ledger')return lessonLedger(step);if(id==='double')return lessonDouble(step);if(id==='intermediary')return lessonIntermediary(step);if(id==='bitcoin')return bitcoinLesson(step);return lessonRisk(step)}
 function lessonShell(inner,label){return top()+card(`<div class="kicker">${label}</div>${inner}`)}
 
 function lessonFunctions(st){
@@ -165,4 +165,29 @@ function placementResult(){let msg,start;if(s.placementScore===3){msg='Tenés un
 
 function practice(){const q=[
  {text:'Una misma entrada digital aparece en dos teléfonos. ¿Qué necesita decidir el sistema?',opts:['Cuál de los usos es válido','Cuál pantalla es más grande','Qué usuario tiene más batería']},
- {te
+ {text:'Un participante te envía una versión del historial que viola una regla que verificás. ¿Qué hacés?',opts:['La aceptás si la mandó primero','La rechazás según tus reglas','La aceptás si tiene más diseño']},
+ {text:'“Bitcoin subió antes, así que garantiza que subirá otra vez.” ¿Qué lectura es más correcta?',opts:['Es una propiedad del protocolo','Es cierto si mucha gente lo repite','El rendimiento pasado no garantiza el futuro']}
+ ][s.step];return top()+card(`<div class="eyebrow">Práctica · ${s.step+1} de 3</div><h2>${q.text}</h2><p class="muted">Contexto nuevo. Sin racha, sin vidas, sin castigo.</p><div class="choiceGrid">${q.opts.map((x,i)=>`<button class="choice" onclick="Actions.practiceAnswer(${i})"><span class="letter">${String.fromCharCode(65+i)}</span><span class="choiceText"><b>${x}</b></span></button>`).join('')}</div>`)}
+function practiceResult(){const n=[0,1,2].filter(i=>s.data[`practice_${i}`]).length;return top()+card(`<div class="eyebrow">Práctica terminada</div><h2>${n}/3 piezas se sostuvieron en un contexto nuevo.</h2><p class="muted">Cuando una pieza vuelve a aparecer y la resolvés, su sello pasa a “Afirmada”.</p>${btn('Ver pasaporte','Actions.passport()')}`)}
+
+function render(){let html='';
+ if(s.view==='welcome')html=welcome();
+ else if(s.view==='belief')html=belief();
+ else if(s.view==='map')html=map();
+ else if(s.view==='lesson')html=s.lesson==='bitcoin'?bitcoinLesson(s.step):lesson(s.lesson,s.step);
+ else if(s.view==='lessonReward')html=lessonReward();
+ else if(s.view==='challenge')html=challenge();
+ else if(s.view==='passport')html=passport();
+ else if(s.view==='placementIntro')html=placementIntro();
+ else if(s.view==='placement')html=placement();
+ else if(s.view==='placementFeedback')html=placementFeedback();
+ else if(s.view==='placementResult')html=placementResult();
+ else if(s.view==='practice')html=practice();
+ else if(s.view==='practiceResult')html=practiceResult();
+ document.getElementById('app').innerHTML=html;
+ if(s.view==='belief'&&s.belief!==null&&s.data.belief===undefined)s.data.belief=s.belief;
+}
+// keep belief in one field for old/new sessions
+const originalBelief=Actions.belief;Actions.belief=(i)=>{s.belief=i;s.data.belief=i;originalBelief(i)};
+render();
+})();
