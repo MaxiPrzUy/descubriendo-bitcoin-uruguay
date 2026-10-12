@@ -3,87 +3,142 @@
 **23 de septiembre de 2026**  
 **Punta Bitcoin / Bem Local · Punta del Este, Uruguay**
 
-## Resumen
+> Primera implementación documentada de Descubriendo Bitcoin Uruguay.
 
-El primer encuentro documentado de Descubriendo Bitcoin Uruguay reunió aproximadamente **40 personas** para una experiencia introductoria sobre Bitcoin.
+## Snapshot
 
-El objetivo no fue enseñar trading ni inversión.
+| Dato | Estado |
+|---|---|
+| Asistencia | **~40 personas** |
+| Formato | Clase introductoria presencial |
+| Metodología | D4 |
+| Medición | Entrada + salida |
+| Caso local | Punta Bitcoin |
+| Material educativo | Guía impresa + recursos |
+| Continuidad | Comunidad + próximos pasos |
 
-La propuesta fue abrir una primera puerta de comprensión y mostrar cómo la educación puede conectarse con una comunidad y un caso local real.
+Los indicadores de aprendizaje se publicarán únicamente cuando estén consolidados y verificados.
 
-## Qué ocurrió
+[Ver estado de resultados →](pilot-results.md)
 
-La edición incluyó:
+---
 
-- encuesta de entrada;
-- charla introductoria;
-- historia del dinero;
-- fundamentos de Bitcoin;
-- autocustodia y seguridad;
-- preguntas y debate;
-- **Punta Bitcoin como caso local de uso**;
-- materiales educativos impresos;
-- encuesta de salida;
-- recursos y continuidad comunitaria.
+## La experiencia
 
-## D4 aplicado
+El objetivo de esta primera edición fue probar algo más completo que una charla:
 
-### Descubrir
+**educación → conversación → caso real → medición → comunidad**
 
-La charla empezó por el dinero y el problema que Bitcoin intenta resolver.
+La clase recorrió fundamentos de Bitcoin desde cero y utilizó a **Punta Bitcoin** como caso local para conectar los conceptos con una experiencia que ya existe en el territorio.
 
-### Debatir
+### D4 aplicado
 
-Se abrió espacio para preguntas, mitos y dudas.
+**Descubrir**  
+Historia del dinero, por qué nació Bitcoin, fundamentos, autocustodia y seguridad.
 
-### Demostrar
+**Debatir**  
+Preguntas abiertas, mitos, dudas y críticas.
 
-Punta Bitcoin fue presentado como ejemplo local de una comunidad que trabaja educación, adopción comercial, Lightning y una economía circular Bitcoin en construcción.
+**Demostrar**  
+Punta Bitcoin como ejemplo local de educación, Lightning, adopción comercial y economía circular Bitcoin en construcción.
 
-### Dar el siguiente paso
+**Dar el siguiente paso**  
+Materiales abiertos, comunidad, recursos y próximos encuentros.
 
-Los participantes recibieron recursos para seguir aprendiendo y canales de continuidad.
+---
 
-## Medición
+## Evidencia visual
 
-El piloto utilizó:
+### Educación + público
+
+![Charla introductoria con público](https://drive.google.com/uc?export=view&id=1q4nZe8GSR9BPA8bn_WoHP3v05eLlIicS)
+
+[Ver foto en Drive](https://drive.google.com/file/d/1q4nZe8GSR9BPA8bn_WoHP3v05eLlIicS/view)
+
+### Sala y comunidad
+
+![Sala del lanzamiento](https://drive.google.com/uc?export=view&id=1kDZPUvsQ-kyu1_OF0Yfl21v5TcqYn-O7)
+
+[Ver foto en Drive](https://drive.google.com/file/d/1kDZPUvsQ-kyu1_OF0Yfl21v5TcqYn-O7/view)
+
+### Aliados en la experiencia
+
+![Roderichs Crypto House en el encuentro](https://drive.google.com/uc?export=view&id=175_QpJnywiimbYoDUSlOZdV8tVp5_sEG)
+
+[Ver foto en Drive](https://drive.google.com/file/d/175_QpJnywiimbYoDUSlOZdV8tVp5_sEG/view)
+
+### Merienda + materiales
+
+![Merienda y materiales educativos](https://drive.google.com/uc?export=view&id=1tFx0F529201fXlIbPFr_3_lK5tY2ru59)
+
+[Ver foto en Drive](https://drive.google.com/file/d/1tFx0F529201fXlIbPFr_3_lK5tY2ru59/view)
+
+---
+
+## Qué medimos
+
+La edición utilizó:
 
 - código anónimo de participante;
 - cinco preguntas iguales antes y después;
-- autoevaluación de comprensión;
+- comprensión declarada;
 - claridad de la clase;
 - NPS.
 
-Los resultados consolidados se publicarán únicamente cuando estén verificados y sin exponer información personal.
+Esto permite distinguir entre **convocatoria** e **impacto educativo**.
 
-## Aprendizajes iniciales
+No publicamos información personal de participantes.
 
-Este caso confirma algo importante para el diseño del programa:
+---
 
-**el contenido se vuelve más fácil de comprender cuando la teoría se conecta con una experiencia local y visible.**
+## Material utilizado
 
-La combinación de educación, conversación, caso real y medición será utilizada como base para mejorar las próximas ediciones.
+La **Edición 01 — Guía de la clase introductoria** acompaña el recorrido educativo y puede descargarse desde el repositorio.
+
+[Descargar guía para participantes →](../../05-learning-materials/downloads/descubriendo-bitcoin-edicion-01.pdf)
+
+Los diez temas de esa guía también están disponibles en Markdown dentro de [Learning Materials](../../05-learning-materials/README.md), para facilitar lectura, adaptación y traducción.
+
+---
 
 ## Ecosistema del encuentro
 
-El programa fue impulsado por **Plugin**.
+**Plugin** impulsó y produjo la experiencia.
 
-**Punta Bitcoin** funcionó como hub local y caso de uso.
+**Punta Bitcoin** funcionó como hub local y caso práctico.
 
-El proyecto contó con apoyo de actores del ecosistema Bitcoin mencionados en los materiales oficiales del programa, entre ellos **LABIF / Fundación Bitcoin Iberoamérica, Paystand.org, Bitcoin Beach y Geyser**.
+Los materiales oficiales del programa reconocen el apoyo de **LABIF / Fundación Bitcoin Iberoamérica, Paystand.org, Bitcoin Beach y Geyser**.
 
-Roderich’s Crypto House acompañó la experiencia del encuentro y la merienda.
+**Roderich’s Crypto House** acompañó la experiencia y la merienda.
 
-## Qué falta documentar
+---
 
-Para mantener el repositorio auditable, no vamos a publicar números que todavía no estén consolidados.
+## Primer aprendizaje de campo
 
-Próximos datos a incorporar cuando estén verificados:
+La teoría se vuelve más fácil de comprender cuando puede conectarse con algo visible y cercano.
 
-- cantidad de encuestas pareadas;
-- puntaje promedio antes/después;
-- cambio de conocimiento;
-- claridad;
-- NPS;
-- registros;
-- aprendizajes cualitativos.
+Por eso, el modelo de replicación recomienda que cada comunidad busque su propio componente **Demostrar**:
+
+- un comercio;
+- una wallet;
+- una experiencia Lightning;
+- un nodo;
+- una comunidad;
+- un caso territorial;
+- una persona que esté construyendo localmente.
+
+La idea no es copiar Punta del Este.
+
+La idea es **traducir el método al contexto local**.
+
+---
+
+## Transparencia
+
+No vamos a completar retrospectivamente métricas que no estén verificadas.
+
+Lo que está confirmado se publica.
+
+Lo que todavía está siendo consolidado se marca como pendiente.
+
+Ese criterio forma parte del modelo.
