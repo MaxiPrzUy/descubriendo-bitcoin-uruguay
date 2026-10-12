@@ -74,6 +74,7 @@ La licencia del repositorio es **CC BY 4.0**. Podés compartir y adaptar los mat
 - **05-learning-materials** — materiales educativos reutilizables.
 - **06-events** — casos documentados y aprendizajes de campo.
 - **07-impact** — marco de medición y plantillas de reporte.
+- **08-digital-experience** — PRD y diseño de Tu Ruta Bitcoin.
 
 ## Principios
 
